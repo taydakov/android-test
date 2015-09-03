@@ -1,16 +1,23 @@
 package com.example.lev.androidtest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MessageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = this.getIntent();
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+
         setContentView(R.layout.activity_message);
+        ((TextView)findViewById(R.id.show_message)).setText(message);
     }
 
     @Override
