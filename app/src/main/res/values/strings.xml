@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Android Test</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Edit a Message</string>
+    <string name="send_button">Send</string>
     <string name="action_settings">Settings</string>
 </resources>
